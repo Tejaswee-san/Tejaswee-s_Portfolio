@@ -482,7 +482,7 @@
             padding: 10px;
             border: 1px solid #d1d5db;
             border-radius: 8px;
-            outline-none;
+            outline: none;
             transition: border-color 0.3s, box-shadow 0.3s;
         }
 
@@ -1441,7 +1441,20 @@
                 font-size: 1.6rem;
             }
         }
+
+        /* Hector Project Background */
+        .hector-bg {
+            background-image: url('https://placehold.co/1200x600/1e1b4b/818cf8.png?text=Hector+Dashboard+Overview') !important;
+        }
     </style>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "vnhee3qfev");
+    </script>
 </head>
 
 <body class="relative"> <!-- Added relative for absolute positioned elements -->
@@ -2671,6 +2684,20 @@
                         </div>
                     </div>
 
+                    <!-- Project Summary: Hector -->
+                    <div class="project-summary-card" data-project-id="hector">
+                        <div class="h-48 bg-cover bg-center hector-bg"></div>
+                        <div class="p-6">
+                            <div class="mb-2">
+                                <span class="project-summary-tag !bg-indigo-100 !text-indigo-800">AI Video Gen</span>
+                                <span class="project-summary-tag !bg-purple-100 !text-purple-800">Open Source</span>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2 mt-2 text-gray-800">Hector</h3>
+                            <p class="text-sm text-gray-600 mb-4 line-clamp-3">Unified platform bringing the absolute best open-source AI video models into a single, effortless workspace that runs locally.</p>
+                            <div class="text-right text-indigo-600 text-sm font-medium hover:underline">View Details <i class="fas fa-arrow-right ml-1 text-xs"></i></div>
+                        </div>
+                    </div>
+
                     <!-- Add more summary cards if needed -->
                     <div
                         class="project-summary-card bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center h-full border-dashed border-2 border-gray-300 min-h-[200px]">
@@ -3453,6 +3480,53 @@
                     </div>
                 </div>
 
+                <!-- DETAILED VIEW: Hector -->
+                <div id="project-detail-hector" class="project-detail-card hidden">
+                    <div class="hector-bg project-image" style="background-image: url('https://placehold.co/1200x600/1e1b4b/818cf8.png?text=Hector+Dashboard+Overview');"></div>
+                    <div class="project-content">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full font-medium">AI Video Generator</span>
+                                <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full font-medium ml-2">Open Source</span>
+                            </div>
+                            <span class="text-gray-500 text-sm"><i class="fas fa-robot mr-1"></i> Software Tool</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Hector: Advance Video Generator</h3>
+                        <p class="text-gray-700 mb-4">The ultimate unified platform. It solves the chaos by bringing the absolute best open-source AI models together into a single, beautiful, and effortless workspace that runs <em>locally</em> right on your PC.</p>
+                        <p class="text-gray-700 mb-6">Built for the "GPU Poor", Hector democratizes AI. Through advanced optimization techniques, it takes massive models and squishes them down so they run smoothly even on standard consumer PCs (down to just 6GB of VRAM).</p>
+
+                        <div class="mb-6">
+                            <h4 class="font-bold mb-2 text-gray-800">What Can Hector Do?</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li><strong>Video & Image Mastery:</strong> Run Wan, Hunyuan Video, Flux, Qwen, Z-Image, and LTX-2 all in one spot.</li>
+                                <li><strong>Studio Audio & TTS:</strong> Generate songs or clone voices using Qwen3 TTS, Ace Step, and more.</li>
+                                <li><strong>Hardware Optimized:</strong> Supports 6GB VRAM, older NVIDIA cards, AMD GPUs, and advanced memory management.</li>
+                                <li><strong>Premium UI/UX:</strong> Dark glassmorphism design with a smart queue system for batch processing.</li>
+                                <li><strong>Advanced Creator Tools:</strong> Mask Editor, VACE ControlNet, Uncensored Prompt Enhancer, and Motion Designer.</li>
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                            <div class="bg-indigo-50 p-3 rounded-lg text-center border border-indigo-100">
+                                <p class="font-bold text-xl text-indigo-700">6GB+</p>
+                                <p class="text-xs text-gray-600">VRAM Support</p>
+                            </div>
+                            <div class="bg-purple-50 p-3 rounded-lg text-center border border-purple-100">
+                                <p class="font-bold text-xl text-purple-700">Unified</p>
+                                <p class="text-xs text-gray-600">Workspace</p>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg text-center border border-slate-200">
+                                <p class="font-bold text-xl text-slate-700">Local</p>
+                                <p class="text-xs text-gray-600">Execution</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 border-t pt-4 flex justify-center items-center gap-4">
+                            <button class="close-detail-btn text-red-500 hover:text-red-700 text-sm font-medium">Close Details <i class="fas fa-times ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Add more detailed project cards here, matching data-project-id -->
 
             </div>
@@ -4091,7 +4165,8 @@
             { name: "Quick Commerce Analysis", keywords: ["marketing", "campaign", "quick", "delivery", "grocery", "growth", "startup", "india"], id: "qcomm" },
             { name: "Nykaa Strategy", keywords: ["fashion", "beauty", "cosmetics", "ecommerce", "strategy", "retail", "women", "brand"], id: "nykaa" },
             { name: "Bijouterie Pala", keywords: ["luxury", "jewelry", "website", "design", "ui", "ux", "premium", "digital"], id: "bijou" },
-            { name: "Caveman's BBQ", keywords: ["food", "branding", "restaurant", "social", "community", "viral", "creative"], id: "bbq" }
+            { name: "Caveman's BBQ", keywords: ["food", "branding", "restaurant", "social", "community", "viral", "creative"], id: "bbq" },
+            { name: "Hector Advance Video Generator", keywords: ["ai", "video", "generator", "open source", "local", "models", "gpu", "ui"], id: "hector" }
         ];
 
         // General Knowledge for Answers
